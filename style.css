@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Mono:wght@700&display=swap');
+
+* {
+    font-family: 'Opens Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+:root {
+    --rojo: #d03b40;
+    --beige: #ded6c0;
+    --blanco: #f5f0ed;
+    --gris: #241d1b;
+    --text-claro: #f5f0ed;
+    --text-oscuro: #3c3c3b;
+
+    --h1: 44px;
+    --h2: 28px;
+    --h3: 24px;
+    --body-text: 16px;
+    --bottom: 14px;
+
+}
+
+/* header */
+
+.header {
+    background: var(--rojo);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: var(--bottom);
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.header .navbar a:hover {
+    color: var(--text-oscuro); 
+    border-bottom: .1rem solid var(--text-oscuro);
+    padding-bottom: .5rem;
+}
+
+/* home */
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(Fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content h1 {
+    font-size: var(--h1);
+    font-weight: bold;
+    color: var(--blanco);
+    text-align: center;
+}
+
+.home .content p {
+    font-size: var(--body-text);
+    color:var(--blanco);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* Space */
+
+.espacio {
+    display: flex;
+    min-height: 33rem;
+}
+
+.espacio .div-brunch {
+    flex: 1;
+    padding: 10rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: var(--rojo);
+    color: var(--text-claro); 
+}
+
+
+.espacio .div-brunch h2 {
+    font-size: var(--h1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.espacio .div-brunch p {
+    padding-top: 2rem;
+    font-size: var(--body-text);
+}
+
+.espacio .div-party {
+    flex: 1;
+    padding: 10rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: var(--beige);
+    color: var(--rojo);
+}
+
+.espacio .div-party h2 {
+    font-size: var(--h1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.espacio .div-party p {
+    padding-top: 2rem;
+    font-size: var(--body-text);
+}
+
+/* producto */
+
+.producto {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(Fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.producto .content h1 {
+    font-size: var(--h1);
+    font-weight: bold;
+    color: var(--blanco);
+    text-align: center;
+}
+
+.producto .content p {
+    text-align: center;
+    font-size: var(--body-text);
+    color:var(--blanco);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.producto .content .btn { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin: auto;
+    width: 250px;
+    background: transparent;
+    font-size: var(--bottom);
+    color: var(--blanco);
+    border: .2rem solid var(--blanco);
+}
+
+/* oferta */
+
+.oferta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    background: var(--beige);
+    padding: 6rem 4rem ;
+}
+
+.offer {
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.offer h3 {
+    font-size: var(--h3);
+    color: var(--text-oscuro);
+    margin-bottom: .1rem
+}
+
+.offer p {
+    font-size: var(--body-text);
+    color: var(--text-oscuro);
+}
+
+.offer img {
+    display: block;
+    float: left;
+    margin-bottom: 4rem;
+    text-align: center;
+    padding-right : 2rem;
+}
+
+.contacto {
+    display: flex;
+    min-height: 33rem;
+}
+
+.contacto .div-contact {
+    flex: 1;
+    padding: 10rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: var(--beige);
+    color: var(--rojo); 
+}
+
+
+.contacto .div-contact h2 {
+    font-size: var(--h1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contacto .div-contact p {
+    padding-top: 2rem;
+    font-size: var(--body-text);
+}
+
+.contacto .div-res {
+    flex: 1;
+    padding: 10rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: var(--rojo);
+    color: var(--beige);
+}
+
+.contacto .div-res h2 {
+    font-size: var(--h1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.espacio .div-res p {
+    padding-top: 2rem;
+    font-size: var(--body-text);
+}
+
+/* footer */
+
+.footer {
+    background: var(--gris);
+}
+
+.footer .sec-footer {
+    padding: 5rem;
+}
+
+.footer .sec-footer .div-footer {
+    color: var(--beige);
+    font-size: var(--h3);
+}
